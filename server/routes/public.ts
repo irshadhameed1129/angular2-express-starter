@@ -1,6 +1,6 @@
 import { Request, Response, Router } from "express";
 import { Tas_users } from '../models/tas_users';
-import { User } from './usermodel';
+
 const publicRouter: Router = Router();
 
 publicRouter.get("/simple", (request: Request, response: Response) => {
