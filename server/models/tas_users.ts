@@ -1,6 +1,6 @@
 import {  sequelize , Sequelize } from '../routes/dbcon';
 
-  const Tas_product = sequelize.define('tas_users', {
+  const Tas_users = sequelize.define('tas_users', {
     ID: {
       type: Sequelize.INTEGER(6),
       allowNull: false,
