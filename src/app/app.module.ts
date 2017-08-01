@@ -4,17 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.router';
-import { VazhipadComponent } from './vazhipad/counter/vazhipad';
 import { LoginComponent } from './login/login';
 import {ReactiveFormsModule} from "@angular/forms";
-import {AddstockitemComponent} from './vazhipad/stock/add_stock_item';
-import { Manage_mainComponent} from './vazhipad/manage/main_page';
-import { AddnewproductComponent } from './vazhipad/manage/add_new_product';
-import {AddnewvazhipadComponent} from './vazhipad/manage/add_new_vazhipad';
+
 
 import 'hammerjs';
 
-import { UpdatestockitemComponent } from './vazhipad/stock/update_stock_item';
  
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'; 
 import {
@@ -49,8 +44,7 @@ import {
 import { HeroesComponent } from './hero/hero';
 @NgModule({
   declarations: [
-    AppComponent,LoginComponent,HeroesComponent,VazhipadComponent,AddstockitemComponent,
-    Manage_mainComponent,AddnewproductComponent,UpdatestockitemComponent,AddnewvazhipadComponent
+    AppComponent,LoginComponent
   ],
   imports: [
     BrowserModule,BrowserAnimationsModule,
@@ -88,9 +82,7 @@ import { HeroesComponent } from './hero/hero';
     
   ],
  
-  providers: [
-    
-  ],
+ 
   bootstrap: [
     AppComponent
   ]
