@@ -12,6 +12,7 @@ import 'hammerjs';
 
  
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'; 
+
 import {
   MdAutocompleteModule, MdButtonModule,  MdButtonToggleModule,  MdCardModule,   MdCheckboxModule,   MdChipsModule,
   MdCoreModule,
