@@ -42,7 +42,7 @@ import {
   MdTooltipModule,
 } from '@angular/material';
 
-import { HeroesComponent } from './hero/hero';
+
 @NgModule({
   declarations: [
     AppComponent,LoginComponent
