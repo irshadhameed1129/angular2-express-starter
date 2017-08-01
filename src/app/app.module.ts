@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.router';
-import { VazhipadComponent } from './vazhipad/counter/vazhipad';
-import { DashboardComponent } from './dashboard/dashboard';
+
+import { DashboardComponent } from './dashboard/dashboard.component';
 import {ReactiveFormsModule} from "@angular/forms";
 
 
