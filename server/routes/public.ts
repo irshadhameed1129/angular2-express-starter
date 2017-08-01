@@ -1,6 +1,6 @@
 import { Request, Response, Router } from "express";
 import { Tas_users } from '../models/tas_users';
-
+import { Sequelize, sequelize } from './dbcon';
 const publicRouter: Router = Router();
 
 publicRouter.get("/simple", (request: Request, response: Response) => {
