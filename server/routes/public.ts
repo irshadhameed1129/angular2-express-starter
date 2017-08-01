@@ -30,7 +30,7 @@ then(users => {
  publicRouter.get('/create_user_table', (request: Request, response: Response) => {
  Tas_users.sync({force: true}).then(() => {
   //Table created
-  return Tas_product.create({
+  return Tas_users.create({
     NAME: 'Prems021',
     CODE: 11,
     MARK: 100,
