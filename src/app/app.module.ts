@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.router';
 import { DashComponent } from './dash/dash';
 import { LoginComponent } from './login/login';
+import { Set1Component } from './test/set1';
 import {ReactiveFormsModule} from "@angular/forms";
 
 
@@ -25,7 +26,7 @@ import {
 
 @NgModule({
   declarations: [
-    AppComponent,LoginComponent,DashComponent
+    AppComponent,LoginComponent,DashComponent,Set1Component
   ],
   imports: [
     BrowserModule,BrowserAnimationsModule,
