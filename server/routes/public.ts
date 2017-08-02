@@ -16,7 +16,7 @@ publicRouter.get('/list', (request: Request, response: Response) => {
 // force: true will drop the table if it already exists
   
   Tas_users.findAll({
-  attributes: ['ID','NAME', 'CODE','MARK']
+  attributes: ['ID','NAME','PASSWORD','CODE','MARK']
 }).
 then(users => {
   response.json({
@@ -34,6 +34,7 @@ then(users => {
     NAME: 'Prems021',
     CODE: 11,
     MARK: 100,
+    PASSWORD: 'arshavin021'
      });
  });
    
