@@ -6,9 +6,16 @@ import { FormGroup, FormControl, Validators, FormBuilder }  from '@angular/forms
   templateUrl: './set1.html',
   styleUrls: ['./set1.css']
 })
+
+
 export class Set1Component implements OnInit {
+  
+   favoriteSeason: string;
+
+  seasons = [  'Winter','Spring','Summer', 'Autumn', ];
   constructor( private router: Router) {   }
   ngOnInit()  {}
+  
  login() {
    
    console.log('insisi');
