@@ -11,6 +11,11 @@ import {  sequelize , Sequelize } from '../routes/dbcon';
       type: Sequelize.STRING,
       allowNull: false
     },
+    PASSWORD: {
+      type: Sequelize.STRING,
+      allowNull: false
+    },
+    
     CODE: {
       type: Sequelize.INTEGER(11),
       allowNull: true
