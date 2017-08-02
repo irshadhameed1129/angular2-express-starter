@@ -11,8 +11,8 @@ import { FormGroup, FormControl, Validators, FormBuilder }  from '@angular/forms
 export class Set1Component implements OnInit {
   
    favoriteSeason: string;
-
-  seasons = [  'Winter','Spring','Summer', 'Autumn', ];
+     
+  seasons = [  'രാവിലെ','രാത്രി','കസ്റ്റമര്‍ക്ക് ഇഷ്ടമുള്ളപ്പോള്‍', 'ഉച്ചയ്ക്ക് ശേഷം', ];
   constructor( private router: Router) {   }
   ngOnInit()  {}
   
