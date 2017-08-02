@@ -1,4 +1,6 @@
 <h1> set 1  </h1>
+<div class="set1_main *ngIf="qes==1">
+
 <div>
   <h1> 1. ഒരു കസ്റ്റമറെ വിസിറ്റ് ചെയ്യാന്‍ പറ്റിയ സമയം എപ്പോഴാണ്.
   </h1>
@@ -9,5 +11,24 @@
   </md-radio-button>
 </md-radio-group>
 <div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason}}</div>
+                                   
+ </div>       
+                                   
+ <div class="set1_main *ngIf="qes==2">
 
- <button md-raised-button>Next</button>
+<div>
+  <h1> 2. ഒരു കസ്റ്റമറെ വിസിറ്റ് ചെയ്യാന്‍ പറ്റിയ സമയം എപ്പോഴാണ്.
+  </h1>
+</div>
+<md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason">
+  <md-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+    {{season}}
+  </md-radio-button>
+</md-radio-group>
+<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason}}</div>
+                                   
+ </div>                                         
+                                   
+                                   
+ <button md-raised-button (click)="next()">Next >></button>
+ <button md-raised-button (click)="prev()"><< Previous </button>
