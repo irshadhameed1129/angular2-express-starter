@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app.router';
-import { LoginComponent } from './dash/dash';
-import { DashComponent } from './login/login';
+import { DashComponent } from './dash/dash';
+import { LoginComponent } from './login/login';
 import {ReactiveFormsModule} from "@angular/forms";
 
 
