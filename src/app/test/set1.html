@@ -16,7 +16,7 @@
 
 
 
-<md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason">
+<md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[0]">
   <md-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
     {{season}}
   </md-radio-button>
@@ -29,14 +29,14 @@
 <div class="mydiv" *ngIf="qes==2">
 
 
-  <h1> 2. ഒരു കസ്റ്റമറെ വിസിറ്റ് ചെയ്യാന്‍ പറ്റിയ സമയം എപ്പോഴാണ്.   </h1>
+  <h1> 2. കസ്റ്റമര്‍ ദേഷ്യപ്പെടുമ്പോള്‍ നിങ്ങള്‍ എന്താണ് ചെയ്യുക .   </h1>
 
 
 
 
 
-<md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason">
-  <md-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
+<md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[1]">
+  <md-radio-button class="example-radio-button" *ngFor="let season of seasons1" [value]="season">
     {{season}}
   </md-radio-button>
 </md-radio-group>
@@ -44,7 +44,15 @@
                                    
  </div>  
 
-
-                                   
- <button md-raised-button (click)="next()">Next >></button>
+ <div class="mydiv" *ngIf="qes>1 && qes < 3">
  <button md-raised-button (click)="prev()"><< Previous </button>
+   </div>  
+
+  <div class="mydiv" *ngIf="qes<3">                               
+ <button md-raised-button (click)="next()">Next >></button>
+  </div>
+
+  <button md-raised-button (click)="res()"> RESULT </button>
+
+
+<footer>Copyright &copy; prems021</footer>
