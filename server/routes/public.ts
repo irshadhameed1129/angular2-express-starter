@@ -41,4 +41,16 @@ then(users => {
  });
 
 
+ publicRouter.post('/add_user', (request: Request, response: Response) => {
+ Tas_users.create({
+    NAME: 'Premji021',
+    CODE: 12,
+    MARK: 10,
+    PASSWORD: 'arshavin021'
+     });
+ });
+   
+ 
+
+
 export { publicRouter };
