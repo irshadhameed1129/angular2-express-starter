@@ -58,8 +58,8 @@ then(users => {
     
     Tas_users.findOne({
   where: {
-    username: username,
-    password: password
+    NAME: username,
+    PASSWORD: password
     }
 }).then(function(result){
   
