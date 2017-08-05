@@ -58,8 +58,8 @@ then(users => {
     
     Tas_users.findOne({
   where: {
-    firstName: request.body.username,
-    lastName: request.body.password
+    username: username,
+    password: password
     }
 }).then(function(result){
   
