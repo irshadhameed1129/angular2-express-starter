@@ -7,11 +7,20 @@ import { FormGroup, FormControl, Validators, FormBuilder }  from '@angular/forms
   styleUrls: ['./dash.css']
 })
 export class AdduserComponent implements OnInit {
-  constructor( private router: Router) {   }
-  ngOnInit()  {}
+  
+  myForm: FormGroup;
+  
+  constructor( private router: Router,private fb: FormBuilder) {   }
+  ngOnInit()  {
+  
+            this.myForm = this.fb.group({
+            username: ['', [<any>Validators.required, <any>Validators.minLength(3)]],
+            password: ['']             
+                                      });
+              }
  login() {
    
-   console.log('insisi');
+   console.log(this.myForm.value);
    
- }
+       }
   }
