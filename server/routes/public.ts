@@ -43,11 +43,12 @@ then(users => {
 
  publicRouter.post('/add_user', (request: Request, response: Response) => {
  Tas_users.create({
-    NAME: 'Premji021',
+    NAME: request.body.username,
     CODE: 12,
     MARK: 10,
-    PASSWORD: 'arshavin021'
-     });
+    PASSWORD: request.body.password
+     })
+   return response.json({success:true, msg:'Successfully saved'});
  });
    
  
