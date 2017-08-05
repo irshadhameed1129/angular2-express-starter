@@ -9,7 +9,7 @@ import { DashComponent } from './dash/dash';
 import { LoginComponent } from './login/login';
 import { Set1Component } from './test/set1';
 import {ReactiveFormsModule} from "@angular/forms";
-
+import {AuthenticationService} from'./services/login.service';
 
 import 'hammerjs';
 
@@ -29,6 +29,7 @@ import {
   declarations: [
     AppComponent,LoginComponent,DashComponent,Set1Component,AdduserComponent
   ],
+       providers: [ AuthenticationService ],
   imports: [
     BrowserModule,BrowserAnimationsModule,
    ReactiveFormsModule,
