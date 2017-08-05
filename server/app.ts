@@ -2,6 +2,7 @@ import { json, urlencoded } from "body-parser";
 import * as compression from "compression";
 import * as express from "express";
 import * as path from "path";
+import { cors } from "cors"; 
 
 import { feedRouter } from "./routes/feed";
 import { loginRouter } from "./routes/login";
@@ -15,6 +16,7 @@ app.disable("x-powered-by");
 
 app.use(json());
 app.use(compression());
+app.use(cors());
 app.use(urlencoded({ extended: true }));
 
 // api routes
