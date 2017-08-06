@@ -8,7 +8,37 @@ import 'rxjs/add/operator/map'
 export class AuthenticationService {
     constructor(private http: Http) { }
 
-    login(model:any) {
+
+
+
+
+
+
+
+
+
+     login(model:any) {
+
+        let body= JSON.stringify(model); 
+           console.log(body);
+        
+        return this.http.post('https://assespmkvy.herokuapp.com/api/public/login_check', body, { headers: contentHeaders})
+            .map((response: Response) => {
+                
+                
+                {
+                    let postr = response.json();
+                   console.log('responce=',postr)
+                    
+                }
+            })   .catch((error:any) => Observable.throw(error.json().error || 'Server error'));
+            
+            
+    }
+
+
+
+    adduser(model:any) {
 
         let body= JSON.stringify(model); 
 
