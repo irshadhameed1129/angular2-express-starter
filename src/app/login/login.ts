@@ -14,12 +14,10 @@ export class LoginComponent implements OnInit {
  
   myForm: FormGroup;
   model = new User('','');
-   color = 'primary';
-  mode = 'indeterminate';
-  value = 50;
-  bufferValue = 75;
+  isclicked : boolean= false;
   constructor( private router: Router,private fb: FormBuilder,public dialog: MdDialog, private aS: AuthenticationService) {   }
   ngOnInit()  {
+    this.isclicked=false;
    this.myForm = this.fb.group({
             username: [''],
             password: ['']             
@@ -27,14 +25,9 @@ export class LoginComponent implements OnInit {
 
   }
    
-     
-    
-      
-
-
- login() {
+    login() {
    
-
+  this.isclicked = true;
     this.aS.login(this.myForm.value)
     .subscribe(data => { 
                     
