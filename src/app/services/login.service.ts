@@ -8,15 +8,6 @@ import 'rxjs/add/operator/map'
 export class AuthenticationService {
     constructor(private http: Http) { }
 
-
-
-
-
-
-
-
-
-
      login(model:any) {
 
         let body= JSON.stringify(model); 
