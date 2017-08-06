@@ -10,12 +10,10 @@ import { AuthenticationService } from '../services/login.service';
 })
 export class AdduserComponent implements OnInit {
   
-  myForm: FormGroup;
+    myForm: FormGroup;
    
     model = new User('','');
-
         
-  
   constructor( private router: Router,private fb: FormBuilder, private aS: AuthenticationService) {   }
   ngOnInit()  {
   
@@ -26,23 +24,12 @@ export class AdduserComponent implements OnInit {
               }
  login() {
    
-   this.aS.login(this.myForm.value)
-    .subscribe(data => { 
-                    
-                     
+   this.aS.adduser(this.myForm.value)
+    .subscribe(data => {                                    
                       this.router.navigate(['/dash']);
-                     
-                },
-                
-                error => {
-                    
-                    
-                });
-   
-   
-   
-   
-   
-   
-       }
+                       },
+                                error => {
+                                          });
+    
+          }
   }
