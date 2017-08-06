@@ -16,23 +16,17 @@
 						<input type="password" class="form-control input-underline input-lg"  formControlName="password"    placeholder="Password">
 					</div>
 				</div>
-        
-          
+                  
          <button md-raised-button  (click)="login()">LogIN</button>
-         <md-progress-bar mode="indeterminate"></md-progress-bar>
         
-        
-        
-<!-- 				<a class="btn btn-primary" (click)="login()"> LogIn </a>
-    -->
-        
+        <md-progress-bar *ngIf="isclicked" mode="indeterminate" color='accent' value = 20 bufferValue = 75></md-progress-bar>
+     
 
 			</form>
-
-
-           
+         
        </md-card>
 		</div>	
 	</div>
 </div>
+
 
