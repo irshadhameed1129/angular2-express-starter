@@ -11,17 +11,12 @@
 
 
   <h1> 1. ഒരു കസ്റ്റമറെ വിസിറ്റ് ചെയ്യാന്‍ പറ്റിയ സമയം എപ്പോഴാണ്.   </h1>
-
-
-
-
-
 <md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[0]">
   <md-radio-button class="example-radio-button" *ngFor="let season of seasons" [value]="season">
     {{season}}
   </md-radio-button>
 </md-radio-group>
-<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason}}</div>
+<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[0]}}</div>
                                    
  </div>  
 
@@ -31,16 +26,26 @@
 
   <h1> 2. കസ്റ്റമര്‍ ദേഷ്യപ്പെടുമ്പോള്‍ നിങ്ങള്‍ എന്താണ് ചെയ്യുക .   </h1>
 
-
-
-
-
 <md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[1]">
   <md-radio-button class="example-radio-button" *ngFor="let season of seasons1" [value]="season">
     {{season}}
   </md-radio-button>
 </md-radio-group>
-<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason}}</div>
+<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[1]}}</div>
+                                   
+ </div>  
+
+<div class="mydiv" *ngIf="qes==3">
+
+
+  <h1> 3. താഴെ കൊടുത്തിട്ടുള്ളതില്‍ കസ്റ്റമര്‍ സര്‍വീസിനെ സംമ്മന്ദിച്ചു ശരിയായിട്ടുള്ളത് ഏതാണ് ?  </h1>
+
+<md-radio-group class="example-radio-group" [(ngModel)]="favoriteSeason[2]">
+  <md-radio-button class="example-radio-button" *ngFor="let season of seasons1" [value]="season">
+    {{season}}
+  </md-radio-button>
+</md-radio-group>
+<div class="example-selected-value">നിങ്ങള്‍ സെലക്ട്‌ ചെയ്ത ഉത്തരം: {{favoriteSeason[2]}}</div>
                                    
  </div>  
 
